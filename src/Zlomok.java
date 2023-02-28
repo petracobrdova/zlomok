@@ -1,9 +1,18 @@
-import javax.naming.PartialResultException;
 import java.util.Scanner;
 
 public class Zlomok {
     private int cit;
     private int men;
+
+    public int getCit()
+    {
+        return cit;
+    }
+
+    public int getMen()
+    {
+        return men;
+    }
 
     public Zlomok plus(Zlomok other)
     {
@@ -18,6 +27,11 @@ public class Zlomok {
     public Zlomok minus(Zlomok other)
     {
         return new Zlomok(this.cit*other.men-other.cit*this.men, this.men*other.men);
+    }
+
+    public Zlomok minus(int other)
+    {
+        return new Zlomok();
     }
 
     public Zlomok krat(Zlomok other)
