@@ -30,7 +30,8 @@ public class Bod
     //vygenerovat niekolko random bodov a naist najvzdialenejsi od 0, 0
 
     @Override
-    public String toString() {
+    public String toString() 
+    {
         return ("[" + surX + "," + surY + "]");
     }
 }
