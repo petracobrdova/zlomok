@@ -1,3 +1,5 @@
+inport
+
 public class Bod
 {
     private Zlomok surX;
@@ -27,12 +29,17 @@ public class Bod
         return new Bod ((this.surX.plus(other.surX)).krat(tmp), (this.surY.plus(other.surY)).krat(tmp));
    } 
 
-    public Bod getFarthest(Bod other) 
+    public Bod getFarthest(Bod[]) 
     {
-        if(Bod.other > Bod.this)
+        Bod tm = new Bod();
+        for(i = 0, i < Bod[].length, i++) 
         {
-            return Bod.other;
+        if(Bod[i+1] > Bod[1])
+        {
+            tmp = Bod[i+1];
         } 
+        } 
+        return tmp;
     } 
 
     //vygenerovat niekolko random bodov a naist najvzdialenejsi od 0, 0
